@@ -1,0 +1,52 @@
+{
+  "global": {
+    "slope": 1.3,
+    "intercept": -0.1,
+    "train_log_score": 0.4804226674691694
+  },
+  "source::acled": {
+    "slope": 1.5,
+    "intercept": 0.7,
+    "train_log_score": 0.1892385023794391
+  },
+  "source::dbnomics": {
+    "slope": 2.0,
+    "intercept": -0.1,
+    "train_log_score": 0.5521007973124206
+  },
+  "source::fred": {
+    "slope": 2.0,
+    "intercept": -0.5,
+    "train_log_score": 0.4761760314075944
+  },
+  "source::infer": {
+    "slope": 1.3,
+    "intercept": -0.1,
+    "train_log_score": 0.4804226674691694
+  },
+  "source::manifold": {
+    "slope": 1.3,
+    "intercept": -0.1,
+    "train_log_score": 0.4804226674691694
+  },
+  "source::metaculus": {
+    "slope": 1.3,
+    "intercept": -0.1,
+    "train_log_score": 0.4804226674691694
+  },
+  "source::polymarket": {
+    "slope": 0.55,
+    "intercept": -0.2,
+    "train_log_score": 0.3945840030048416
+  },
+  "source::wikipedia": {
+    "slope": 1.75,
+    "intercept": 0.6,
+    "train_log_score": 0.5084579267114875
+  },
+  "source::yfinance": {
+    "slope": 2.0,
+    "intercept": 0.2,
+    "train_log_score": 0.596318501453071
+  }
+}

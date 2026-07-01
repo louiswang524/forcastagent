@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+experiments/forecastbench_data/timeseries_cache/
+experiments/results/*_repro/
+experiments/results/*_smoke/
+*.env
+.env

@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "title": "Will the city approve the downtown transit bond by election day?",
+      "description": "A local ballot measure requires a simple majority to pass.",
+      "resolution_criteria": "Resolve true if official election results certify passage by the deadline.",
+      "domain": "politics",
+      "cutoff_date": "2026-06-01",
+      "resolution_date": "2026-11-10",
+      "outcome": 1,
+      "market_probability": 0.58
+    },
+    {
+      "id": "q2",
+      "title": "Will Acme Robotics announce an acquisition of BetaMotion before Q4?",
+      "description": "Rumors suggest a possible acquisition, but no formal process has been announced.",
+      "resolution_criteria": "Resolve true if Acme Robotics or BetaMotion announces a definitive acquisition agreement before 2026-10-01.",
+      "domain": "business",
+      "cutoff_date": "2026-06-01",
+      "resolution_date": "2026-10-01",
+      "outcome": 0,
+      "market_probability": 0.41
+    }
+  ],
+  "evidence": {
+    "q1": [
+      {"id": "q1-e1", "source": "poll", "text": "Three recent polls show support above 55 percent.", "stance": "supports", "weight": 0.22, "tags": ["recent", "poll"]},
+      {"id": "q1-e2", "source": "history", "text": "Similar bonds passed in four of the last five local elections.", "stance": "supports", "weight": 0.12, "tags": ["base_rate"]},
+      {"id": "q1-e3", "source": "news", "text": "A taxpayer group launched a late opposition campaign.", "stance": "opposes", "weight": 0.09, "tags": ["counterevidence"]}
+    ],
+    "q2": [
+      {"id": "q2-e1", "source": "rumor", "text": "Industry newsletter reports early acquisition talks.", "stance": "supports", "weight": 0.12, "tags": ["recent"]},
+      {"id": "q2-e2", "source": "filing", "text": "Acme CFO said capital allocation will prioritize buybacks.", "stance": "opposes", "weight": 0.20, "tags": ["counterevidence"]},
+      {"id": "q2-e3", "source": "history", "text": "Acme has completed only one acquisition in the last decade.", "stance": "opposes", "weight": 0.15, "tags": ["base_rate"]}
+    ]
+  }
+}
+

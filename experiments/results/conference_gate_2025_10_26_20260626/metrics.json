@@ -1,0 +1,38 @@
+{
+  "aia_baseline": {
+    "n": 1077.0,
+    "brier": 0.20085895262721956,
+    "log_score": 0.5807555099499815,
+    "calibration_error": 0.12000481973076436
+  },
+  "evidence_graph_v1": {
+    "n": 1077.0,
+    "brier": 0.20484076641660875,
+    "log_score": 0.5857551508714275,
+    "calibration_error": 0.11343316261957903
+  },
+  "historical_analog": {
+    "n": 1077.0,
+    "brier": 0.18759679725063513,
+    "log_score": 0.5460267882886083,
+    "calibration_error": 0.023995641946642537
+  },
+  "historical_evidence_blend": {
+    "n": 1077.0,
+    "brier": 0.18855559389994833,
+    "log_score": 0.5504983417463755,
+    "calibration_error": 0.0230937149843741
+  },
+  "search_llm_loop": {
+    "n": 1077.0,
+    "brier": 0.18883888841245752,
+    "log_score": 0.5523607951353402,
+    "calibration_error": 0.027135385960759338
+  },
+  "hybrid_analog_search": {
+    "n": 1077.0,
+    "brier": 0.18883888841245752,
+    "log_score": 0.5523607951353402,
+    "calibration_error": 0.027135385960759338
+  }
+}

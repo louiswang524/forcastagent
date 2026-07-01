@@ -1,0 +1,25 @@
+{
+  "mapping": {
+    "acled": "evidence_graph_v1",
+    "dbnomics": "evidence_graph_v1",
+    "fred": "historical_analog",
+    "infer": "search_llm_loop",
+    "manifold": "search_llm_loop",
+    "metaculus": "aia_baseline",
+    "polymarket": "search_llm_loop",
+    "wikipedia": "search_llm_loop",
+    "yfinance": "evidence_graph_v1"
+  },
+  "default_system": "evidence_graph_v1",
+  "reliability_rule": {
+    "min_hist_coverage": 0.5,
+    "market_override_sharpness": 0.05,
+    "prior_override_sharpness": 0.24,
+    "source_prior_route_sharpness": 0.18,
+    "noisy_source_strength": 0.3,
+    "max_hist_horizon_days": 400,
+    "search_strength": 0.5,
+    "max_search_disagreement": 0.35,
+    "fallback_system": "aia_baseline"
+  }
+}
