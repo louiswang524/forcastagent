@@ -4,14 +4,13 @@ This repository contains the reproducibility artifact for:
 
 **When Should Forecasting Agents Reason? Behavioral Stress Tests for Reliability Routing**
 
-The paper studies forecasting-agent behavior on ForecastBench-style binary forecasting tasks. The core intervention, `ReliabilityRoute`, routes each target among deterministic forecasting mechanisms: historical analogs, a reproduced AIA-style baseline, search/evidence-graph reasoning, and market/crowd priors. The artifact includes the code, cached public ForecastBench inputs, compact result artifacts used by the paper tables, and scripts to rerun the main experiments.
+The paper studies forecasting-agent behavior on ForecastBench-style binary forecasting tasks. The core intervention, `ReliabilityRoute`, routes each target among deterministic forecasting mechanisms: historical analogs, a reproduced AIA-style baseline, search/evidence-graph reasoning, and market/crowd priors. The artifact includes the code, cached public ForecastBench inputs, and scripts to rerun the main experiments.
 
 ## Repository Layout
 
 - `experiments/forecasting_agents/`: forecasting systems, ForecastBench adapter, reliability routers, calibration/ablation scripts, and multi-vintage analysis.
 - `experiments/forecastbench_data/raw/`: cached public ForecastBench question and resolution JSON files used in the reported runs.
-- `experiments/results/`: compact result summaries used by the paper.
-- `paper/colm2026_forecasting_agents/`: LaTeX source and compiled PDF.
+- `experiments/results/`: created by reproduction scripts; generated results are not committed.
 - `scripts/`: convenience scripts for smoke tests and reproducing the reported runs.
 
 ## Environment
@@ -55,26 +54,7 @@ Multi-vintage walk-forward self-adjusting router:
 python -m experiments.forecasting_agents.multivintage_behavior_analysis --self-adjust-thresholds --walk-forward-adjustment --out-dir experiments/results/multivintage_self_adjust_repro
 ```
 
-The full multi-vintage run may take several minutes because it evaluates all later LLM vintages. The paper's compact result artifacts are already included under:
-
-- `experiments/results/reliability_routed_gate_transfer_20260627/`
-- `experiments/results/conference_gate_2025_10_26_20260626/`
-- `experiments/results/paper_quality_reliability_20260627/`
-- `experiments/results/multivintage_self_adjust_20260627/`
-- `experiments/results/multivintage_behavior_20260627/`
-
-## Rebuild Paper
-
-From `paper/colm2026_forecasting_agents/`:
-
-```bash
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-bibtex main
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-```
-
-The compiled paper is included as `paper/colm2026_forecasting_agents/main.pdf`.
+The full multi-vintage run may take several minutes because it evaluates all later LLM vintages. Generated result artifacts are written under `experiments/results/`. They are intentionally omitted from the repository so reviewers can regenerate them from code.
 
 ## Data Notes
 

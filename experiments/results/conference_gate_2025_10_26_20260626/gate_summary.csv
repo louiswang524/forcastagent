@@ -1,3 +1,0 @@
-system,gate_decision,n,brier,log_score,calibration_error
-hybrid_analog_search,historical_analog,578,0.24224741948096887,0.6749370055434593,0.017415570934256042
-hybrid_analog_search,search_fallback,499,0.12697489851746846,0.41037873177683765,0.05175802114972937
